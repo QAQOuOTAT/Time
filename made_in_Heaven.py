@@ -6,6 +6,7 @@ Created on Thu Mar  7 22:46:38 2024
 """
 import time
 import os
+a=['_*_________','__*________','___*_______','____*______','_____*_____','______*____','_______*___','________*__','_________*_']
 while True:
     print('=======================','\n Type x to exit','\n Type p to play')
     print('=======================')
@@ -18,7 +19,7 @@ while True:
         os.system("cls")
         break
     if x == 'p':
-        a=int(5)
+        t=int(10)
         delay=1
         print("\r    你 相信引力嗎    ",end="")
         time.sleep(2)
@@ -26,13 +27,17 @@ while True:
         time.sleep(2)
         print("\r  Made in Heaven   ",end="")
         print('\n-----------------------')
-        for i in range(a):
-            for char in ['*__________','_*_________','__*________','___*_______','____*______','_____*_____','______*____','_______*___','________*__','_________*_','__________*']:
-                print(f'\r{char}                  ',end='')
+        for i in range(t):
+            for char in a:
+                print(f'\r{char}        ',end='')
                 time.sleep(delay)
                 delay *= 0.96
         print('\r___________')
-        print('\n=======================')
         time.sleep(1)
+        print('\n我以神的諭令令你退下！')
+        time.sleep(2)
+        print('    覺悟者恆幸福    ')
+        print('\n=======================')
+        time.sleep(3)
         os.system("cls")
         break
